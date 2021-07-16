@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="prompt_enter_weight">Enter Weight</string>
+    <string name="conversion_units_for_weight">Conversion Units for Weight</string>
+    <string name="gram_g_to_kilogram_kg">Gram(g) To Kilogram(kg)</string>
+    <string name="gram_g_to_miligram_mg">Gram(g) To Miligram(mg)</string>
+    <string name="kilogram_kg_to_gram_g">Kilogram(kg) To Gram(g)</string>
+    <string name="milligram_mg_to_gram_g">Milligram(mg) To Gram(g)</string>
+    <string name="kilogram_kg_to_milligram_mg">Kilogram(kg) To Milligram(mg)</string>
+    <string name="milligram_mg_to_kilogram_kg">Milligram(mg) To Kilogram(kg)</string>
+    <string name="calculate">CALCULATE</string>
+</resources>

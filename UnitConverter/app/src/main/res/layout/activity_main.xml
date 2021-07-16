@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/number_to_convert"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="numberDecimal"
+        android:hint="@string/prompt_enter_weight"/>
+
+    <TextView
+        android:id="@+id/prompt_for_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/conversion_units_for_weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_to_convert" />
+    <RadioGroup
+        android:id="@+id/units_radio_group"
+        android:checkedButton="@id/button_gram_to_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/prompt_for_user"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/button_gram_to_kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gram_g_to_kilogram_kg"/>
+
+        <RadioButton
+            android:id="@+id/button_gram_to_mg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gram_g_to_miligram_mg"/>
+
+        <RadioButton
+            android:id="@+id/button_kg_to_gram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kilogram_kg_to_gram_g"/>
+
+        <RadioButton
+            android:id="@+id/button_mg_to_gram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/milligram_mg_to_gram_g"/>
+
+        <RadioButton
+            android:id="@+id/button_kg_to_mg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kilogram_kg_to_milligram_mg"/>
+
+        <RadioButton
+            android:id="@+id/button_mg_to_kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/milligram_mg_to_kilogram_kg"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/units_radio_group"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
