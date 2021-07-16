@@ -9,4 +9,5 @@
     <string name="kilogram_kg_to_milligram_mg">Kilogram(kg) To Milligram(mg)</string>
     <string name="milligram_mg_to_kilogram_kg">Milligram(mg) To Kilogram(kg)</string>
     <string name="calculate">CALCULATE</string>
+    <string name="conversion_text">Conversion:</string>
 </resources>
